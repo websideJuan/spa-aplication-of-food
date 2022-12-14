@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>carrito de compras</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--icons Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim rem, praesentium asperiores tempora voluptatem repudiandae et adipisci repellat porro beatae? Beatae, fuga labore quas modi laborum vero reprehenderit aspernatur quidem similique veritatis natus nemo voluptate commodi alias repellat fugiat voluptas eius quo illum totam ipsa accusamus quos. Laboriosam dolore eius repellat? Beatae aperiam modi consequuntur distinctio reiciendis ipsa iusto porro eveniet nemo voluptate reprehenderit, delectus laborum molestiae nulla dolores. Nihil eligendi ea, magnam maxime excepturi tempora.</p>
+    <p class="loading"><span class="spiner"></span></p>
+
+    <div class="wrapper__car">
+        <ul class="ulOna">
+            <li><b>Ref</b> <span>icons</span> </li>
+            <li><b>Producto</b> <span>icons</span> </li>
+            <li><b>Cantidad</b> <span>icons</span> </li>
+            <li><b>Price</b> <span><i class="fa-solid fa-square-dollar"></i></span> </li>
+            <li><b>Agg/Quitar</b> <span><i class="fa-solid fa-plus"></i>/<i class="fa-solid fa-minus"></i></span> </li>
+            <li><b>Total</b> <span>icons</span> </li>
+        </ul>
+
+        <div class="car" id="wrapper"></div>
+
+        <ul class="ulTree">
+            <li class="car__total-price"></li>
+        </ul>
+    </div>
+    <div class="allClass" id="children"></div>
+    
+
+
+    <template id="box_card">
+        <ul class="ulTwo">
+            <li class="car__img"><img src="/" alt="" class="imgClassW"></li>
+            <li class="car__title">o</li>
+            <li class="car__value"></li>
+            <li class="car__price"></li>
+            <li class="car__btns">
+                <button
+                    data-menos="-"
+                >
+                    -
+                </button>
+                <button 
+                    data-menos="+"
+                >
+                    +
+                </button>
+            </li>
+            <li class="car__total"></li>
+        </ul>
+    </template>
+
+    <script src="./fetchData.js"></script>
 </body>
 </html>
