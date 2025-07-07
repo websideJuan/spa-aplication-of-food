@@ -1,4 +1,4 @@
-const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
+const url = 'https://fakestoreapi.com/products/1'
 const children = document.getElementById('children')
 const loadingElemet = document.querySelector('.loading')
 const box_card = document.getElementById('box_card').content
@@ -19,7 +19,7 @@ document.addEventListener("click", e => {
 window.addEventListener("DOMContentLoaded", async () => {
     
     const data = await datasApis() || []
-
+    console.log(data)
     loadingF()
 
     data.forEach(dato => {
