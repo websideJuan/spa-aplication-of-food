@@ -1,4 +1,4 @@
-const url = 'https://fakestoreapi.com/products/1'
+const url = 'https://fakestoreapi.com/products'
 const children = document.getElementById('children')
 const loadingElemet = document.querySelector('.loading')
 const box_card = document.getElementById('box_card').content
